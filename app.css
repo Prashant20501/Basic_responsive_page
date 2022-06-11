@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(90deg, #1363DF, #47B5FF);
+}
+
+.outer {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    background-image: linear-gradient(90deg, #1363DF, #47B5FF);
+}
+
+.panel {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.price {
+    width: 320px;
+    height: 555px;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    border-right: 1px #ededed solid;
+}
+
+.img {
+    width: 100%;
+    height: 150px;
+    margin: 5x auto;
+    object-fit: contain;
+    background-repeat: no-repeat;
+}
+
+#img1 {
+    background-image: url("icon1.png");
+    background-size: contain;
+}
+
+#img2 {
+    background-image: url("icon2.png");
+    background-size: contain;
+}
+
+#img3 {
+    background-image: url("icon3.png");
+    background-size: contain;
+}
+
+.price:nth-of-type(3) {
+    border: none;
+}
+
+.heading {
+    font-size: 1.2em;
+    color: #c0c0c0;
+    margin: 20px 30px 40px 30px;
+    padding-bottom: 40px;
+    border-bottom: 1px #ededed solid;
+}
+
+.second {
+    font-size: 0.9em;
+    color: #1363DF;
+    padding: 10px 0;
+    border-bottom: 1px #ededed solid;
+    margin: 0px 30px;
+    margin-top: -30px;
+}
+
+.third {
+    font-size: 0.9em;
+    color: #1363DF;
+    padding: 10px 0px;
+    margin: 0px 30px;
+    border-bottom: 1px #ededed solid;
+}
+
+.cost {
+    font-size: 2em;
+    font-weight: bold;
+    color: #1363DF;
+    padding: 20px 0px;
+    margin: 0px 30px;
+}
+
+.btn {
+    font-size: 1.25em;
+    text-transform: capitalize;
+    font-weight: 300;
+    padding: 10px 40px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 1px solid #acd2eb;
+    background-color: #55ccff;
+    color: white;
+    transition: all 0.25s;
+}
+
+#mid {
+    background-color: white;
+    color: #1363DF;
+}
+
+.btn:hover {
+    background-color: #1363DF;
+    cursor: pointer;
+}
+
+#mid:hover {
+    background-color: #1363DF;
+    color: white;
+}
+
+@media (max-width:900px) {
+    .panel {
+        flex-direction: column;
+    }
+
+    .price {
+        border-right: none;
+        border-bottom: 1px #ededed solid;
+    }
+}
